@@ -11,7 +11,7 @@ public interface PlayerDAO {
 
     public void create(String firstname, String lastname);
 
-    public Player getStudent(String firstname, String lastname);
+    public Player getPlayer(String firstname, String lastname);
 
     public List<Player> listStudents();
 

@@ -24,12 +24,16 @@ public class PlayerJDBCTemplate implements PlayerDAO {
     }
 
     @Override
-    public Player getStudent(String firstname, String lastname) {
+    public Player getPlayer(String firstname, String lastname) {
         return null;
     }
 
     @Override
     public List<Player> listStudents() {
+        return null;
+    }
+
+    public List<Player> listPlayers() {
         return null;
     }
 
@@ -40,7 +44,7 @@ public class PlayerJDBCTemplate implements PlayerDAO {
 
         return student;
     }
-    public List<Player> listPlayers() {
+    public List<Player> listPlayer() {
         String SQL = "select * from player";
         List <Player> players = jdbcTemplateObject.query(SQL, new PlayerRepository());
         return players;
