@@ -41,7 +41,6 @@ public class PlayerJDBCTemplate implements PlayerDAO {
         String SQL = "select * from player where id = ?";
         Player student = jdbcTemplateObject.queryForObject(SQL,
                 new Object[]{id}, new PlayerRepository());
-
         return student;
     }
     public List<Player> listPlayer() {
