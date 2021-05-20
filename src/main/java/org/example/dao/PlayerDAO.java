@@ -13,9 +13,8 @@ public interface PlayerDAO {
 
     public Player getPlayer(String firstname, String lastname);
 
-    public List<Player> listStudents();
+    public List<Player> listPlayers();
 
     public void delete(Integer id);
-
-    public void update(Integer id);
+    public void update(Integer id, String firstname);
 }

@@ -30,17 +30,6 @@ public class PlayerJDBCTemplate implements PlayerDAO {
         return null;
     }
 
-    @Override
-    public List<Player> listStudents() {
-
-        return null;
-    }
-
-    public List<Player> listPlayers() {
-
-        return null;
-    }
-
     public Player getPlayer(Integer id) {
         String SQL = "select * from player where id = ?";
         Player student = jdbcTemplateObject.queryForObject(SQL,
@@ -48,7 +37,7 @@ public class PlayerJDBCTemplate implements PlayerDAO {
 
         return student;
     }
-    public List<Player> listPlayer() {
+    public List<Player> listPlayers() {
         String SQL = "select * from player";
         List <Player> players = jdbcTemplateObject.query(SQL, new PlayerRepository());
 
@@ -61,10 +50,6 @@ public class PlayerJDBCTemplate implements PlayerDAO {
         return;
     }
 
-    @Override
-    public void update(Integer id) {
-
-    }
 
     public void update(Integer id, String firstname){
         String SQL = "update player set firstname = ? where id = ?";

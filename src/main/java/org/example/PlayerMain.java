@@ -29,12 +29,12 @@ public class PlayerMain {
         }
 
         System.out.println("----Updating Record with ID = 2 -----" );
-        playerJDBCTemplate.update(5, "Chicago");
+        playerJDBCTemplate.update(3, "Chicago");
 
         System.out.println("----Listing Record with ID = 2 -----" );
         Player player = playerJDBCTemplate.getPlayer(2);
         System.out.print("ID : " + player.getId() );
-        System.out.print(", Firstname : " + player.getLastname() );
+        System.out.print(", Firstname : " + player.getFirstname() );
         System.out.println(", Lastname : " + player.getLastname());
     }
 }
