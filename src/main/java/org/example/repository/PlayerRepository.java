@@ -1,6 +1,6 @@
-package repository;
+package org.example.repository;
 
-import model.Player;
+import org.example.model.Player;
 
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;

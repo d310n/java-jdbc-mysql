@@ -1,6 +1,6 @@
-package dao;
+package org.example.dao;
 
-import model.Player;
+import org.example.model.Player;
 
 import javax.sql.DataSource;
 import java.util.List;

@@ -1,12 +1,12 @@
-package templates;
+package org.example.templates;
 
 import java.util.List;
 import javax.sql.DataSource;
 
-import dao.PlayerDAO;
-import model.Player;
+import org.example.dao.PlayerDAO;
+import org.example.model.Player;
 import org.springframework.jdbc.core.JdbcTemplate;
-import repository.PlayerRepository;
+import org.example.repository.PlayerRepository;
 
 public class PlayerJDBCTemplate implements PlayerDAO {
     private DataSource dataSource;
