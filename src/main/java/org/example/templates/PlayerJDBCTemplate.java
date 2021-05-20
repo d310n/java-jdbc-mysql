@@ -20,20 +20,24 @@ public class PlayerJDBCTemplate implements PlayerDAO {
         String SQL = "insert into player (firstname, lastname) values (?, ?)";
         jdbcTemplateObject.update( SQL, firstname, lastname);
         System.out.println("First Name = " + firstname + " Lastname = " + lastname);
+
         return;
     }
 
     @Override
     public Player getPlayer(String firstname, String lastname) {
+
         return null;
     }
 
     @Override
     public List<Player> listStudents() {
+
         return null;
     }
 
     public List<Player> listPlayers() {
+
         return null;
     }
 
@@ -41,11 +45,13 @@ public class PlayerJDBCTemplate implements PlayerDAO {
         String SQL = "select * from player where id = ?";
         Player student = jdbcTemplateObject.queryForObject(SQL,
                 new Object[]{id}, new PlayerRepository());
+
         return student;
     }
     public List<Player> listPlayer() {
         String SQL = "select * from player";
         List <Player> players = jdbcTemplateObject.query(SQL, new PlayerRepository());
+
         return players;
     }
     public void delete(Integer id) {
